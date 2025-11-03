@@ -1,0 +1,109 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.nav-usuario__servicios {
+    margin-bottom: 4.8rem;
+     @include m.tablet {
+        display: flex;
+        gap: .4rem;
+    }
+
+    a {
+        background-color: v.$blue;
+        padding: 1.2rem 1.6rem;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 1.6rem;
+        font-weight: v.$bold;
+        text-align: center;
+        color: v.$white;
+        border-radius: .8rem;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: color.adjust(v.$blue, $lightness: -12%);
+        }
+
+        &.active {
+            background-color: v.$white;
+            color: v.$blue;
+        }
+    }
+}
+
+.sin-citas {
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lista-citas,
+.servicios {
+
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 1.2rem;
+        border-top: 1px solid  color.adjust(v.$blue, $lightness: 20%);
+        border-radius: 1.6rem;
+
+        p {
+            font-weight: v.$bold;
+            color: color.adjust(v.$blue, $lightness: 20%);
+        }
+
+        span, .servicio {
+            font-weight: v.$regular;
+            color: v.$white;
+        }
+
+    }
+
+    .button {
+        background-color: color.adjust(v.$red, $lightness: 2%);
+        padding: 1.2rem 1.6rem;
+        display: inline-block;
+        width: 100%;
+        margin-top: 3.2rem;
+        border: none;
+        font-weight: 700;
+        color: #fff;
+        border-radius: .8rem;
+        transition: background-color .3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: color.adjust(v.$red, $lightness: -12%);
+        }
+    }
+}
+
+.servicios {
+
+    .acciones {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2.4rem;
+
+        .button-actualizar {
+            background-color: color.adjust(v.$blue, $lightness: -12%);
+
+            &:hover {
+                background-color: v.$blue;
+            }
+        }
+
+        .button {
+            width: auto;
+            margin: 2.4rem 0;
+        }
+
+        form {
+            margin: 0;
+        }
+    }
+}

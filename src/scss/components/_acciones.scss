@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.acciones{
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .acciones__link{
+        display: block;
+        color: v.$white;
+        padding: .8rem;
+        margin-bottom: calc(v.$separacion / 2);
+        text-align: center;
+        flex: 1;
+
+        &:hover{
+            transition: color .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+            color: v.$blue;
+        }
+    }
+}

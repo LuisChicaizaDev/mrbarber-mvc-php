@@ -1,0 +1,26 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.paginacion {
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    
+    button {
+        background-color: v.$blue;
+        padding: .8rem 1.2rem;
+        border-radius: .8rem;
+        color: v.$white;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: color.adjust(v.$blue, $lightness: -12%,);
+        }
+    }
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

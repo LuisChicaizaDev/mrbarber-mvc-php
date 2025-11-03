@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    text-align: center;
+    margin: 4rem 0;
+   
+    p {
+        display: inline;
+        font-size: 1.6rem;
+    }
+
+    a {
+        color: color.adjust(v.$blue, $lightness: 24%);
+        transition: color .3s linear;
+
+        &:hover {
+            color: color.adjust(v.$blue, $lightness: -4%);
+        }
+    }
+}

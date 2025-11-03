@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alerta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alerta {
+    padding: .8rem 1.6rem;
+    color: v.$white;
+    width: min(100%, 48rem);
+    display: block;
+    margin-bottom: .8rem;
+    border-radius: .6rem;
+    border-left: 1px solid v.$white;
+    text-align: center;
+
+    &.error {
+        background-color: v.$red;
+    }
+
+    &.exito {
+        background-color: v.$green;
+    }
+}

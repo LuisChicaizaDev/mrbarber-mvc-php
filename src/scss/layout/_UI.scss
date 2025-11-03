@@ -1,0 +1,70 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.container-app{
+    @include  m.desktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 100vh;
+    }
+
+    .logo {
+        font-size: 4rem;
+        color: v.$white;
+        font-weight: v.$bold;
+        z-index: 10;
+        position: absolute;
+        top: 3.2rem;
+        left: 3.2rem;
+        text-transform: uppercase;
+
+        span {
+            color: v.$blue;
+        }
+    }
+
+    .image{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50rem;
+        background-image: url(../img/banner.jpg);
+        background-size: cover;
+        background-position: center center;
+        //mask-image: linear-gradient(black, #00000003);
+        padding: 24px;
+
+        @include m.desktop{
+            height: auto;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .image__title {
+        font-size: clamp(3.6rem, 1rem + 3.8vw, 5.4rem);
+        z-index: 10;
+    }
+
+    .app{
+        width: 95%;
+        margin: 0 auto;
+        padding: 3.2rem 1.6rem;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+
+        @include m.tablet{
+            overflow-y: auto;
+        }
+    }
+}
