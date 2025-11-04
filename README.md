@@ -15,7 +15,8 @@ Incluye además un **panel administrativo** para gestionar los servicios ofrecid
 - **Panel de Administrador** con CRUD de servicios y gestión de citas.  
 - **Consumo de API REST** mediante *Fetch API* para mostrar los servicios en el frontend.  
 - **Alertas dinámicas** con *SweetAlert* para mejorar la experiencia del usuario.  
-- **Arquitectura MVC (Model-View-Controller)**, desarrollada desde cero sin frameworks.  
+- **Arquitectura MVC (Model-View-Controller)**, desarrollada desde cero sin frameworks.
+- **Responsive**, adapatado a móviles, tablets y ordenadores
 
 
 ## 🛠️ Tecnologías Utilizadas
@@ -78,3 +79,15 @@ Le di un toque personal a la interfaz (colores, tipografía y logo) para moderni
 
 ## 💻 Demo
 Puedes visualizar e interactuar con este proyecto en el siguiente enlace : [mrbarber.free.nf](https://mrbarber.free.nf/)
+
+Puedes acceder con estas credenciales:
+
+Correo:
+```sh
+usuario@demo.com
+```
+Contraseña:
+```sh
+userdemo
+```
+
