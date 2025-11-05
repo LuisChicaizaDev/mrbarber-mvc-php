@@ -67,4 +67,21 @@
             overflow-y: auto;
         }
     }
+
+    .user-demo {
+        background-color: #f6f8f9;
+        border-radius: .8rem;
+        margin: 3.2rem auto 7rem;
+        padding: 1.6rem 2.4rem;
+        max-width: 40rem;
+
+        .user-demo__text {
+            color: v.$black;
+            font-size: 1.6rem;
+
+            span {
+                font-weight: v.$bold;
+            }
+        }
+    }
 }

@@ -38,3 +38,14 @@
     <a href="<?php echo BASE_URL; ?>/crear-cuenta" class="acciones__link">¿No tienes una cuenta? Crear una</a>
     <a href="<?php echo BASE_URL; ?>/restablecer-contrasenia" class="acciones__link">¿Olvidaste tu contraseña?</a>
 </div>
+
+<!-- Usuario Demo-->
+<div class="user-demo">
+    <p class="user-demo__text">
+        Correo: <span>usuario@demo.com</span>
+    </p>
+
+    <p class="user-demo__text">
+        Contraseña: <span>userdemo</span>
+    </p>
+</div>
