@@ -1,4 +1,4 @@
-# MR. BARBER ✂️💇🏼‍♂️
+# MR. BARBER 💈
 
 **MR. BARBER** es una aplicación web desarrollada para la gestión de reservas en un salón de peluquería y barbería.  
 Los usuarios pueden **registrarse, confirmar su cuenta por correo, iniciar sesión, restablecer su contraseña y reservar citas** seleccionando los servicios disponibles.  
